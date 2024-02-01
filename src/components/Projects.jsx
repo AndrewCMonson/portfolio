@@ -1,7 +1,7 @@
 const Projects = () => {
 	return (
 		<>
-			<section id="projects" className="py-12">
+			<section id="projects" className="pt-12 md:pt-20 px-6 h-2/3">
 				<div className="container mx-auto">
 					<div className="text-center mb-12">
 						<h2 className="text-4xl font-bold text-blue-gray-900 mb-4">
@@ -10,10 +10,21 @@ const Projects = () => {
 						<p className="text-blue-gray-400">
 							Here are some of the projects I&apos;ve worked on recently.
 						</p>
+						<p className="text-blue-gray-400">
+							You can checkout my Github{' '}
+							<a
+								href="https://www.github.com/AndrewCMonson"
+								target="_blank"
+								rel="noreferrer"
+								className="underline underline-offset-2 hover:text-blue-gray-900"
+							>
+								here
+							</a>
+						</p>
 					</div>
 
-					<div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-						<div className="bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden">
+					<div className="grid grid-cols-1 w-100 gap-8 md:grid-cols-2 lg:grid-cols-3">
+						<div className="md:hover:-translate-y-1 md:hover:-translate-x-1 bg-white shadow-lg hover:shadow-xl rounded-lg overflow-hidden">
 							<a
 								href="https://www.github.com/AndrewCMonson/kursties-kookies"
 								target="_blank"
@@ -29,13 +40,14 @@ const Projects = () => {
 										Kurstie&apos;s Kookies
 									</h3>
 									<p className="text-blue-gray-400">
-										eCommerce site built with Node.js, Express, Handlebars.js.
+										eCommerce site built with Node.js, Express, MySQL, and
+										Handlebars.js.
 									</p>
 								</div>
 							</a>
 						</div>
 
-						<div className="bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden">
+						<div className="md:hover:-translate-y-1 md:hover:-translate-x-1 bg-white shadow-lg hover:shadow-xl rounded-lg overflow-hidden">
 							<a
 								href="https://www.github.com/AndrewCMonson/proshop"
 								target="_blank"
@@ -58,7 +70,7 @@ const Projects = () => {
 							</a>
 						</div>
 
-						<div className="bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden">
+						<div className="md:hover:-translate-y-1 md:hover:-translate-x-1 bg-white shadow-lg hover:shadow-xl rounded-lg overflow-hidden">
 							<a
 								href="https://www.github.com/AndrewCMonson/no-name-react"
 								target="_blank"

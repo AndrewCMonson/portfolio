@@ -1,15 +1,16 @@
-import Nav from "./components/Navbar.jsx"
-import Hero from "./components/Hero.jsx"
-import Projects from "./components/Projects.jsx";
+import { Outlet } from 'react-router-dom';
+import Nav from './components/Navbar.jsx';
+
 
 
 const App = () => {
-  return (
+	return (
 		<>
 			<Nav />
-      <Hero />
-      <Projects />
+			<main className='flex-auto'>
+				<Outlet />
+			</main>
 		</>
 	);
-}
-export default App
+};
+export default App;

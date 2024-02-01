@@ -25,7 +25,7 @@ export function Nav() {
 				color="blue-gray"
 				className="p-1 font-normal"
 			>
-				<a href="#" className="flex items-center">
+				<a href="/about" className="flex items-center">
 					About
 				</a>
 			</Typography>
@@ -35,7 +35,7 @@ export function Nav() {
 				color="blue-gray"
 				className="p-1 font-normal"
 			>
-				<a href="#" className="flex items-center">
+				<a href="/projects" className="flex items-center">
 					Projects
 				</a>
 			</Typography>
@@ -45,7 +45,7 @@ export function Nav() {
 				color="blue-gray"
 				className="p-1 font-normal"
 			>
-				<a href="#" className="flex items-center">
+				<a href="/contact" className="flex items-center">
 					Contact
 				</a>
 			</Typography>
@@ -54,14 +54,16 @@ export function Nav() {
 
 	return (
 		<Navbar
-			className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4"
+			className="top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4"
 			color="white"
 			shadow={true}
 		>
 			<div className="flex items-center justify-between text-blue-gray-900">
 				<div>
-					<Typography variant="h6" color="blue-gray">
-						andrew
+					<Typography variant="h5" color="blue-gray">
+						<a href="/">
+							<span className="font-bold">andrew</span>
+						</a>
 					</Typography>
 				</div>
 				<div className="flex items-center gap-4">
