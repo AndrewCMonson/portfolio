@@ -1,5 +1,5 @@
 import Hero from '../components/Hero.jsx';
-import Projects from '../components/Projects.jsx'
+import Projects from '../components/Projects.jsx';
 
 const LandingPage = () => {
 	return (

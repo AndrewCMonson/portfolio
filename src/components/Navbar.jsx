@@ -4,7 +4,7 @@ import {
 	Navbar,
 	Typography,
 	IconButton,
-    Collapse,
+	Collapse,
 } from '@material-tailwind/react';
 
 export function Nav() {
@@ -111,6 +111,5 @@ export function Nav() {
 		</Navbar>
 	);
 }
-
 
 export default Nav;

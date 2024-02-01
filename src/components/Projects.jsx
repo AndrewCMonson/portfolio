@@ -41,7 +41,15 @@ const Projects = () => {
 									</h3>
 									<p className="text-blue-gray-400">
 										eCommerce site built with Node.js, Express, MySQL, and
-										Handlebars.js.
+										Handlebars.js.{' '}
+										<a
+											href="https://infinite-depths-65606-d9aa1a1e89cd.herokuapp.com/"
+											target="_blank"
+											rel="noreferrer"
+											className="hover:underline"
+										>
+											Live site
+										</a>
 									</p>
 								</div>
 							</a>
