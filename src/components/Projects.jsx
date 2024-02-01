@@ -1,22 +1,22 @@
 const Projects = () => {
 	return (
 		<>
-			<section id="projects" className="pt-12 md:pt-20 px-6 h-2/3">
+			<section id="projects" className="pt-12 md:pt-20 px-6 h-2/3 bg-blue-gray-800">
 				<div className="container mx-auto">
 					<div className="text-center mb-12">
-						<h2 className="text-4xl font-bold text-blue-gray-900 mb-4">
+						<h2 className="text-4xl font-bold text-white mb-4">
 							Projects
 						</h2>
-						<p className="text-blue-gray-400">
+						<p className="text-blue-gray-200">
 							Here are some of the projects I&apos;ve worked on recently.
 						</p>
-						<p className="text-blue-gray-400">
+						<p className="text-blue-gray-200">
 							You can checkout my Github{' '}
 							<a
 								href="https://www.github.com/AndrewCMonson"
 								target="_blank"
 								rel="noreferrer"
-								className="underline underline-offset-2 hover:text-blue-gray-900"
+								className="underline underline-offset-2 hover:text-white"
 							>
 								here
 							</a>
@@ -70,7 +70,7 @@ const Projects = () => {
 									<h3 className="text-xl font-bold text-blue-gray-900 mb-2">
 										PROShop
 									</h3>
-									<p className="text-blue-gray-400">
+									<p className="text-blue-gray-800">
 										eCommerce application built with MongoDB, React, Redux,
 										Express and Node.js.
 									</p>
