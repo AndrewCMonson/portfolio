@@ -1,12 +1,10 @@
 const Projects = () => {
 	return (
 		<>
-			<section id="projects" className="py-12 px-6 h-2/3 bg-blue-gray-800">
+			<section id="projects" className="py-12 px-6 bg-blue-gray-800">
 				<div className="container mx-auto">
 					<div className="text-center mb-12">
-						<h2 className="text-4xl font-bold text-white mb-4">
-							Projects
-						</h2>
+						<h2 className="text-4xl font-bold text-white mb-4">Projects</h2>
 						<p className="text-blue-gray-200">
 							Here are some of the projects I&apos;ve worked on recently.
 						</p>
@@ -42,14 +40,6 @@ const Projects = () => {
 									<p className="text-blue-gray-400">
 										eCommerce site built with Node.js, Express, MySQL, and
 										Handlebars.js.{' '}
-										<a
-											href="https://infinite-depths-65606-d9aa1a1e89cd.herokuapp.com/"
-											target="_blank"
-											rel="noreferrer"
-											className="hover:underline"
-										>
-											Live site
-										</a>
 									</p>
 								</div>
 							</a>
