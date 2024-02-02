@@ -1,3 +1,5 @@
+import react from '../assets/img/react.png';
+
 const Hero = () => {
 	return (
 		<>
@@ -21,7 +23,7 @@ const Hero = () => {
 						</div>
 						<div className="flex flex-row justify-center">
 							<img
-								src="../src/assets/img/react.png"
+								src={react}
 								alt="react"
 								className="w-6 h-6 md:w-10 md:h-10"
 							/>
