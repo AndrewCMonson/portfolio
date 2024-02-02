@@ -41,7 +41,7 @@ const Projects = () => {
 									<h3 className="text-xl font-bold text-blue-gray-900 mb-2">
 										Kurstie&apos;s Kookies
 									</h3>
-									<p className="text-blue-gray-400">
+									<p className="text-blue-gray-800">
 										eCommerce site built with Node.js, Express, MySQL, and
 										Handlebars.js.{' '}
 									</p>
@@ -88,7 +88,7 @@ const Projects = () => {
 									<h3 className="text-xl font-bold text-blue-gray-900 mb-2">
 										YourSchools (WIP)
 									</h3>
-									<p className="text-blue-gray-400">
+									<p className="text-blue-gray-800">
 										Preschool and Daycare finder built using MongoDB, React,
 										Express and Node.js.
 									</p>
