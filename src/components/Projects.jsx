@@ -1,4 +1,4 @@
-import proshop from '../assets/img/PROShop.png';
+import proShop from '../assets/img/ProShop.png';
 import kookies from '../assets/img/KurstiesKookies.png';
 import yourSchools from '../assets/img/YourSchools.png';
 
@@ -56,7 +56,7 @@ const Projects = () => {
 								rel="noreferrer"
 							>
 								<img
-									src={proshop}
+									src={proShop}
 									alt=""
 									className="w-full h-56 object-cover object-center"
 								/>
