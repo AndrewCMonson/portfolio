@@ -12,10 +12,10 @@ export function ContactForm() {
 
 		emailjs
 			.sendForm(
-				'service_3ofq4ss',
-				'template_z4522v4',
+				import.meta.env.VITE_EMAILJS_SERVICE_ID,
+				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
 				form.current,
-				'95DDJB338hFkpfoIn'
+				import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 			)
 			.then(
 				result => {
