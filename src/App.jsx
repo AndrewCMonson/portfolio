@@ -4,7 +4,6 @@ import Projects from './components/Projects.jsx';
 import ContactForm from './components/ContactForm.jsx';
 import useScrollDirection from './hooks/useScrollDirection.js';
 import Footer from './components/Footer.jsx';
-// import ContactUs from './components/TestContactForm.jsx';
 
 const App = () => {
 	const scrollDirection = useScrollDirection();
@@ -16,8 +15,7 @@ const App = () => {
 			>
 				<Nav />
 			</div>
-
-			<div className="h-full flex flex-col bg-blue-gray-800">
+			<div className="h-full flex flex-col">
 				<Hero />
 				<Projects />
 				<ContactForm />
