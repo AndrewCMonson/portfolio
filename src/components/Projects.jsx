@@ -13,7 +13,7 @@ const Projects = () => {
 							Here are some of the projects I&apos;ve worked on recently.
 						</p>
 						<p className="text-blue-gray-200">
-							You can checkout my Github{' '}
+							You can check out my Github{' '}
 							<a
 								href="https://www.github.com/AndrewCMonson"
 								target="_blank"
@@ -42,7 +42,7 @@ const Projects = () => {
 										Kurstie&apos;s Kookies
 									</h3>
 									<p className="text-blue-gray-800">
-										eCommerce site built with Node.js, Express, MySQL, and
+										eCommerce application built with Node.js, Express, MySQL, and
 										Handlebars.js.{' '}
 									</p>
 								</div>
