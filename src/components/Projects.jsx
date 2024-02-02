@@ -42,8 +42,8 @@ const Projects = () => {
 										Kurstie&apos;s Kookies
 									</h3>
 									<p className="text-blue-gray-800">
-										eCommerce application built with Node.js, Express, MySQL, and
-										Handlebars.js.{' '}
+										eCommerce application built with Node.js, Express, MySQL,
+										and Handlebars.js.{' '}
 									</p>
 								</div>
 							</a>

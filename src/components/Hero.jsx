@@ -31,16 +31,8 @@ const Hero = () => {
 								alt="react"
 								className="w-6 h-6 md:w-10 md:h-10"
 							/>
-							<img
-								src={node}
-								alt="nodejs"
-								className="-6 h-6 md:w-10 md:h-10"
-							/>
-							<img
-								src={mongo}
-								alt="mongo"
-								className="-6 h-6 md:w-10 md:h-10"
-							/>
+							<img src={node} alt="nodejs" className="-6 h-6 md:w-10 md:h-10" />
+							<img src={mongo} alt="mongo" className="-6 h-6 md:w-10 md:h-10" />
 							<img
 								src={typescript}
 								alt="typescript"
