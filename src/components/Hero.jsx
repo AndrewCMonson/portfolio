@@ -1,8 +1,8 @@
 const Hero = () => {
 	return (
 		<>
-			<section className="md:pt-12 bg-white md:h-1/2">
-				<div className="flex flex-row items-center justify-evenly container mx-auto">
+			<section className="bg-white md:h-1/2">
+				<div className="flex flex-row items-center justify-evenly container mx-auto mt-2">
 					<div className="w-1/2 flex justify-center items-center ">
 						<div className="p-3 flex flex-row justify-center">
 							<img
