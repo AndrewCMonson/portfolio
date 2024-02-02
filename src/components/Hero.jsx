@@ -2,7 +2,7 @@ import react from '../assets/img/react.png';
 import mongo from '../assets/img/mongo.png';
 import node from '../assets/img/nodejs.png';
 import typescript from '../assets/img/typescript.png';
-import portrait from '../assets/img/Personal_Avatar.JPG';
+import portrait from '../assets/img/avatar.jpg';
 
 const Hero = () => {
 	return (
