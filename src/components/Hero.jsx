@@ -1,4 +1,8 @@
 import react from '../assets/img/react.png';
+import mongo from '../assets/img/mongo.png';
+import node from '../assets/img/nodejs.png';
+import typescript from '../assets/img/typescript.png';
+import portrait from '../assets/img/Personal_Avatar.JPG';
 
 const Hero = () => {
 	return (
@@ -8,7 +12,7 @@ const Hero = () => {
 					<div className="w-1/2 flex justify-center items-center ">
 						<div className="p-3 flex flex-row justify-center">
 							<img
-								src="../src/assets/img/Personal_Avatar.JPG"
+								src={portrait}
 								alt="avatar"
 								className="rounded-lg shadow-lg object-cover object-center max-h-96"
 							/>
@@ -28,17 +32,17 @@ const Hero = () => {
 								className="w-6 h-6 md:w-10 md:h-10"
 							/>
 							<img
-								src="../src/assets/img/nodejs.png"
+								src={node}
 								alt="nodejs"
 								className="-6 h-6 md:w-10 md:h-10"
 							/>
 							<img
-								src="../src/assets/img/mongo.png"
+								src={mongo}
 								alt="mongo"
 								className="-6 h-6 md:w-10 md:h-10"
 							/>
 							<img
-								src="../src/assets/img/typescript.png"
+								src={typescript}
 								alt="typescript"
 								className="-6 h-6 md:w-10 md:h-10"
 							/>

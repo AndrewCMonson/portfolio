@@ -1,4 +1,6 @@
-
+import proshop from '../assets/img/PROShop.png';
+import kookies from '../assets/img/KurstiesKookies.png';
+import yourSchools from '../assets/img/YourSchools.png';
 
 const Projects = () => {
 	return (
@@ -31,7 +33,7 @@ const Projects = () => {
 								rel="noreferrer"
 							>
 								<img
-									src="../src/assets/img/KurstiesKookies.png"
+									src={kookies}
 									alt=""
 									className="w-full h-56 object-cover object-center"
 								/>
@@ -54,7 +56,7 @@ const Projects = () => {
 								rel="noreferrer"
 							>
 								<img
-									src="../src/assets/img/PROShop.png"
+									src={proshop}
 									alt=""
 									className="w-full h-56 object-cover object-center"
 								/>
@@ -77,7 +79,7 @@ const Projects = () => {
 								rel="noreferrer"
 							>
 								<img
-									src="../src/assets/img/YourSchools.png"
+									src={yourSchools}
 									alt=""
 									className="w-full h-56 object-cover object-center"
 								/>
