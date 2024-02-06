@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 
 const Project = ({ title, description, image, link}) => {
 	return (
@@ -20,13 +20,6 @@ const Project = ({ title, description, image, link}) => {
 			</div>
 		</>
 	);
-};
-
-Project.propTypes = {
-	title: PropTypes.string.isRequired,
-	description: PropTypes.string.isRequired,
-	image: PropTypes.string.isRequired,
-	link: PropTypes.string.isRequired,
 };
 
 export default Project;

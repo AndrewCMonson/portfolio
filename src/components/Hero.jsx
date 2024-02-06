@@ -4,25 +4,44 @@ import node from '../assets/img/nodejs.png';
 import typescript from '../assets/img/typescript.png';
 import { Button } from '@material-tailwind/react';
 import { Transition } from '@headlessui/react';
-
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const Hero = () => {
+	const [clicked, setClicked] = useState(false);
+
+	const navigate = useNavigate();
+
+	const handleClick = event => {
+		event.preventDefault();
+
+		setTimeout(() => {
+			navigate('/projects');
+		}, 2000);
+
+		setClicked(true);
+	};
+
 	return (
 		<>
-			<Transition
-				appear={true}
-				show={true}
-				enter="transition ease-in-out duration-1000 transform"
-				enterFrom="translate-x-full translate-y-full"
-				enterTo="translate-x-0"
-				leave="transition-opacity duration-150"
-				leaveFrom="opacity-100"
-				leaveTo="opacity-0"
-			>
-				<section className="bg-white py-12 px-6">
-					<div className="container mx-auto">
+			<section className="bg-white py-12 px-6 h-full">
+				<Transition.Child
+					enter="transition-transform duration-2000"
+					enterFrom="transform -translate-y-48"
+					enterTo="transform translate-y-0"
+					leave="transition-transform duration-150"
+					leaveFrom="transform translate-y-0"
+					leaveTo="transform -translate-y-48"
+				>
+					<div
+						className={`container mx-auto ${
+							clicked
+								? 'transition-all duration-2000 transform -translate-y-96 opacity-0'
+								: ''
+						}`}
+					>
 						<div className="flex flex-col text-center container  md:items-center">
-							<div className="text-blue-gray-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+							<div className="text-blue-gray-800 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
 								I&apos;m Andrew
 							</div>
 							<div className="text-blue-gray-900 text-xs sm:text-sm md:text-lg md:block">
@@ -55,15 +74,22 @@ const Hero = () => {
 									href="/projects"
 									className="text-blue-gray-900 text-xs sm:text-sm md:text-lg md:block"
 								>
-									<Button variant="outlined" ripple={true} size="sm">
+									<Button
+										href="/projects"
+										variant="outlined"
+										ripple={true}
+										size="sm"
+										onClick={handleClick}
+									>
 										See my Portfolio
 									</Button>
 								</a>
 							</div>
 						</div>
 					</div>
-				</section>
-			</Transition>
+				</Transition.Child>
+				
+			</section>
 		</>
 	);
 };

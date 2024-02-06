@@ -22,63 +22,75 @@ const Nav = () => {
 
 	const navList = (
 		<ul className=" mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-			<Typography
-				as="li"
-				variant="small"
-				color="blue-gray"
-				className="p-1 font-normal"
-			>
-				<a href="/contact" className="flex items-center">
-					Contact
-				</a>
-			</Typography>
-			<Typography
-				as="li"
-				variant="small"
-				color="blue-gray"
-				className="p-1 font-normal"
-			>
-				<a href="/projects" className="flex items-center">
-					Projects
-				</a>
-			</Typography>
-			<Typography
-				as="li"
-				variant="small"
-				color="blue-gray"
-				className="p-1 font-normal"
-			>
-				<a href="/about" className="flex items-center">
-					About
-				</a>
-			</Typography>
-			<Typography
-				as="li"
-				variant="small"
-				color="blue-gray"
-				className="p-1 font-normal"
-			>
-				<a href="/resume" className="flex items-center">
-					Resume
-				</a>
-			</Typography>
+			{location.pathname === '/contact' ? null : (
+				<Typography
+					as="li"
+					variant="small"
+					color="blue-gray"
+					className="p-1 font-normal"
+				>
+					<a href="/contact" className="flex items-center">
+						Contact
+					</a>
+				</Typography>
+			)}
+
+			{location.pathname === '/projects' ? null : (
+				<Typography
+					as="li"
+					variant="small"
+					color="blue-gray"
+					className="p-1 font-normal"
+				>
+					<a href="/projects" className="flex items-center">
+						Projects
+					</a>
+				</Typography>
+			)}
+
+			{location.pathname === '/about' ? null : (
+				<Typography
+					as="li"
+					variant="small"
+					color="blue-gray"
+					className="p-1 font-normal"
+				>
+					<a href="/about" className="flex items-center">
+						About
+					</a>
+				</Typography>
+			)}
+
+			{location.pathname === '/resume' ? null : (
+				<Typography
+					as="li"
+					variant="small"
+					color="blue-gray"
+					className="p-1 font-normal"
+				>
+					<a href="/resume" className="flex items-center">
+						Resume
+					</a>
+				</Typography>
+			)}
 		</ul>
 	);
 
 	return (
 		<Navbar
-			className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4"
+			className="top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4"
 			color="transparent"
 			shadow={true}
 		>
 			<div className="flex items-center justify-between text-blue-gray-900">
 				<div>
-					{location.pathname !== '/' ? (<Typography variant="h5" color="blue-gray">
-						<a href="/">
-							<span className="font-bold">andrew</span>
-						</a>
-					</Typography>) : null}
-					
+					{location.pathname !== '/' ? (
+						<Typography variant="h5" color="blue-gray">
+							<a href="/">
+								<span className="font-bold">andrew</span>
+							</a>
+						</Typography>
+					) : null}
 				</div>
 				<div className="flex items-center gap-4">
 					<div className="mr-4 hidden lg:block">{navList}</div>
@@ -124,6 +136,6 @@ const Nav = () => {
 			<Collapse open={openNav}>{navList}</Collapse>
 		</Navbar>
 	);
-}
+};
 
 export default Nav;
