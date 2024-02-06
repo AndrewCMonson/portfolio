@@ -18,6 +18,7 @@ export function ContactForm() {
 				import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 			)
 			.then(
+				// TODO figure out how to handle the response and any errors
 				result => {
 					console.log(result.text);
 					setSent(true);
@@ -86,6 +87,7 @@ export function ContactForm() {
 								</div>
 							</div>
 						</div>
+						{/* TODO add error handling toast or text if email send fails */}
 						<Button className="mt-6 bg-blue-gray-700" fullWidth type="submit">
 							{sent ? 'Sent!' : 'Send it'}
 						</Button>
