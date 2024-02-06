@@ -1,4 +1,6 @@
-import Projects from "../components/Projects"
+import projects from '../data/projects';
+import Project from '../components/Project';
+
 
 const ProjectPage = () => {
   return (
@@ -20,7 +22,17 @@ const ProjectPage = () => {
 					</a>
 				</p>
 			</div>
-			<Projects />
+			<div className="grid grid-cols-1 w-100 gap-8 md:grid-cols-2 lg:grid-cols-3">
+				{projects.map((project, index) => (
+					<Project
+						key={index}
+						title={project.name}
+						description={project.description}
+						image={project.img}
+						link={project.src}
+					/>
+				))}
+			</div>
 		</section>
 	);
 }
