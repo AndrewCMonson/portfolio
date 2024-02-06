@@ -4,7 +4,6 @@ import AboutMe from '../components/AboutMe.jsx';
 const About = () => {
 	return (
 		<>
-			<div className=""></div>
 			<Hero />
 			<AboutMe />
 		</>

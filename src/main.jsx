@@ -6,9 +6,9 @@ import {
 	RouterProvider
 } from 'react-router-dom'
 import About from './pages/About';
-import Projects from './components/Projects';
+import ProjectPage from './pages/ProjectPage.jsx';
 import Resume from './pages/Resume';
-import ContactForm from './components/ContactForm';
+import ContactPage from './pages/ContactPage';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
@@ -18,9 +18,9 @@ const router = createBrowserRouter(
 		<Route path="/" element={<App />} >
 			<Route index={true} path='/' element={<About />} />
 			<Route path='/about' element={<About />} />
-			<Route path='/projects' element={<Projects />} />
+			<Route path='/projects' element={<ProjectPage />} />
 			<Route path='/resume' element={<Resume />} />
-			<Route path='/contact' element={<ContactForm />} />
+			<Route path='/contact' element={<ContactPage />} />
 		</Route>
 	)
 );

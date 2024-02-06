@@ -86,6 +86,11 @@ const ContactForm = () => {
 								</div>
 							</div>
 						</div>
+						{sent && (
+							<Typography color="green" className="mt-2">
+								Email sent!
+							</Typography>
+						)}
 						<Button className="mt-6 bg-blue-gray-700" fullWidth type="submit">
 							{sent ? 'Sent!' : 'Send it'}
 						</Button>
