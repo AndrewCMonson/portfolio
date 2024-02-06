@@ -7,7 +7,7 @@ import portrait from '../assets/img/avatar.jpg';
 const Hero = () => {
 	return (
 		<>
-			<section className="bg-white md:h-1/2">
+			<section className="bg-white md:h-1/2 py-12 px-6">
 				<div className="flex flex-row items-center justify-evenly container mx-auto mt-2">
 					<div className="w-1/2 flex justify-center items-center ">
 						<div className="p-3 flex flex-row justify-center">

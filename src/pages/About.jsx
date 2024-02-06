@@ -1,13 +1,13 @@
-import Hero from "../components/Hero.jsx";
-
+import Hero from '../components/Hero.jsx';
+import AboutMe from '../components/AboutMe.jsx';
 
 const About = () => {
-  return (
+	return (
 		<>
-			<div className="h-full flex flex-col">
-				<Hero />
-			</div>
+			<div className=""></div>
+			<Hero />
+			<AboutMe />
 		</>
 	);
-}
-export default About
+};
+export default About;

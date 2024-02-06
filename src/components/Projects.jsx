@@ -5,7 +5,7 @@ import yourSchools from '../assets/img/YourSchools.png';
 const Projects = () => {
 	return (
 		<>
-			<section id="projects" className="py-12 px-6 bg-blue-gray-800">
+			<div id="projects" className="py-12 px-6 bg-blue-gray-800">
 				<div className="container mx-auto">
 					<div className="text-center mb-12">
 						<h2 className="text-4xl font-bold text-white mb-4">Projects</h2>
@@ -97,7 +97,7 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 		</>
 	);
 };

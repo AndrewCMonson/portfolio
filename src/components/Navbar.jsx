@@ -7,7 +7,7 @@ import {
 	Collapse,
 } from '@material-tailwind/react';
 
-export function Nav() {
+const Nav = () => {
 	const [openNav, setOpenNav] = useState(false);
 
 	useEffect(() => {

@@ -2,7 +2,7 @@ import { Card, Input, Button, Typography } from '@material-tailwind/react';
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-export function ContactForm() {
+const ContactForm = () => {
 	const [sent, setSent] = useState(false);
 
 	const form = useRef();
@@ -30,7 +30,7 @@ export function ContactForm() {
 
 	return (
 		<>
-			<div
+			<section
 				id="contact"
 				className="container mx-auto px-4 flex justify-center py-12"
 			>
@@ -91,7 +91,7 @@ export function ContactForm() {
 						</Button>
 					</form>
 				</Card>
-			</div>
+			</section>
 		</>
 	);
 }
