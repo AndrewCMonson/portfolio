@@ -1,8 +1,6 @@
 import Nav from './components/Navbar.jsx';
-import Hero from './components/Hero.jsx';
-import Projects from './components/Projects.jsx';
-import ContactForm from './components/ContactForm.jsx';
 import Footer from './components/Footer.jsx';
+import { Outlet } from 'react-router-dom';
 
 const App = () => {
 	return (
@@ -11,11 +9,9 @@ const App = () => {
 				<Nav />
 			</div>
 			<div className="h-full flex flex-col">
-				<Hero />
-				<Projects />
-				<ContactForm />
-				<Footer />
+				<Outlet />
 			</div>
+			<Footer />
 		</>
 	);
 };

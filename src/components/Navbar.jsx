@@ -25,7 +25,7 @@ export function Nav() {
 				color="blue-gray"
 				className="p-1 font-normal"
 			>
-				<a href="#contact" className="flex items-center">
+				<a href="/contact" className="flex items-center">
 					Contact
 				</a>
 			</Typography>
