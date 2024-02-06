@@ -24,7 +24,7 @@ const Hero = () => {
 
 	return (
 		<>
-			<section className="bg-white py-12 px-6 h-full">
+			<section className="py-12 px-6 h-full">
 				<Transition.Child
 					enter="transition-transform duration-2000"
 					enterFrom="transform -translate-y-48"
@@ -76,7 +76,7 @@ const Hero = () => {
 								>
 									<Button
 										href="/projects"
-										variant="outlined"
+										variant='outlined'
 										ripple={true}
 										size="sm"
 										onClick={handleClick}

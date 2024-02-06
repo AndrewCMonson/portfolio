@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom'
 import About from './pages/About';
 import ProjectPage from './pages/ProjectPage.jsx';
-import Resume from './pages/Resume';
+import ResumePage from './pages/ResumePage.jsx';
 import ContactPage from './pages/ContactPage';
 import LandingPage from './pages/LandingPage.jsx';
 import ReactDOM from 'react-dom/client';
@@ -20,7 +20,7 @@ const router = createBrowserRouter(
 			<Route index={true} path='/' element={<LandingPage />} />
 			<Route path='/about' element={<About />} />
 			<Route path='/projects' element={<ProjectPage />} />
-			<Route path='/resume' element={<Resume />} />
+			<Route path='/resume' element={<ResumePage />} />
 			<Route path='/contact' element={<ContactPage />} />
 		</Route>
 	)
