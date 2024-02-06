@@ -7,7 +7,7 @@ const App = () => {
 			<div>
 				<Nav />
 			</div>
-			<div className="h-full flex flex-col bg-blue-gray-800">
+			<div className="h-full flex flex-col ">
 				<Outlet />
 			</div>
 			

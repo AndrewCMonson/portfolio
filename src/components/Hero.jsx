@@ -2,6 +2,7 @@ import react from '../assets/img/react.png';
 import mongo from '../assets/img/mongo.png';
 import node from '../assets/img/nodejs.png';
 import typescript from '../assets/img/typescript.png';
+import { Button } from '@material-tailwind/react';
 
 const Hero = () => {
 	return (
@@ -28,6 +29,13 @@ const Hero = () => {
 								alt="typescript"
 								className="-6 h-6 md:w-10 md:h-10"
 							/>
+						</div>
+						<div className='py-4'>
+							<a href='/projects' className='text-blue-gray-900 text-xs sm:text-sm md:text-lg md:block'>
+							<Button variant="outlined" ripple={true} size="sm">
+								See my Portfolio
+							</Button>
+							</a>
 						</div>
 					</div>
 				</div>

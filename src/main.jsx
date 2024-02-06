@@ -9,6 +9,7 @@ import About from './pages/About';
 import ProjectPage from './pages/ProjectPage.jsx';
 import Resume from './pages/Resume';
 import ContactPage from './pages/ContactPage';
+import LandingPage from './pages/LandingPage.jsx';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
@@ -16,7 +17,7 @@ import './index.css';
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<App />} >
-			<Route index={true} path='/' element={<About />} />
+			<Route index={true} path='/' element={<LandingPage />} />
 			<Route path='/about' element={<About />} />
 			<Route path='/projects' element={<ProjectPage />} />
 			<Route path='/resume' element={<Resume />} />

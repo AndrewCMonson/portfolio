@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import {
 	Navbar,
@@ -9,6 +10,8 @@ import {
 
 const Nav = () => {
 	const [openNav, setOpenNav] = useState(false);
+
+	const location = useLocation();
 
 	useEffect(() => {
 		window.addEventListener(
@@ -70,11 +73,12 @@ const Nav = () => {
 		>
 			<div className="flex items-center justify-between text-blue-gray-900">
 				<div>
-					{/* <Typography variant="h5" color="blue-gray">
+					{location.pathname !== '/' ? (<Typography variant="h5" color="blue-gray">
 						<a href="/">
 							<span className="font-bold">andrew</span>
 						</a>
-					</Typography> */}
+					</Typography>) : null}
+					
 				</div>
 				<div className="flex items-center gap-4">
 					<div className="mr-4 hidden lg:block">{navList}</div>
