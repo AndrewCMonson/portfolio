@@ -29,6 +29,36 @@ export function Nav() {
 					Contact
 				</a>
 			</Typography>
+			<Typography
+				as="li"
+				variant="small"
+				color="blue-gray"
+				className="p-1 font-normal"
+			>
+				<a href="/projects" className="flex items-center">
+					Projects
+				</a>
+			</Typography>
+			<Typography
+				as="li"
+				variant="small"
+				color="blue-gray"
+				className="p-1 font-normal"
+			>
+				<a href="/about" className="flex items-center">
+					About
+				</a>
+			</Typography>
+			<Typography
+				as="li"
+				variant="small"
+				color="blue-gray"
+				className="p-1 font-normal"
+			>
+				<a href="/resume" className="flex items-center">
+					Resume
+				</a>
+			</Typography>
 		</ul>
 	);
 
