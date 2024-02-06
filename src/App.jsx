@@ -1,5 +1,4 @@
 import Nav from './components/Navbar.jsx';
-import Footer from './components/Footer.jsx';
 import { Outlet } from 'react-router-dom';
 
 const App = () => {
@@ -8,10 +7,10 @@ const App = () => {
 			<div>
 				<Nav />
 			</div>
-			<div className="h-full flex flex-col">
+			<div className="h-full flex flex-col bg-blue-gray-800">
 				<Outlet />
 			</div>
-			<Footer />
+			
 		</>
 	);
 };

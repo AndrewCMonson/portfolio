@@ -70,11 +70,11 @@ const Nav = () => {
 		>
 			<div className="flex items-center justify-between text-blue-gray-900">
 				<div>
-					<Typography variant="h5" color="blue-gray">
+					{/* <Typography variant="h5" color="blue-gray">
 						<a href="/">
 							<span className="font-bold">andrew</span>
 						</a>
-					</Typography>
+					</Typography> */}
 				</div>
 				<div className="flex items-center gap-4">
 					<div className="mr-4 hidden lg:block">{navList}</div>

@@ -1,12 +1,13 @@
 import { Card, Typography } from '@material-tailwind/react';
 import ImageCarousel from './Carousel.jsx';
+import IconBar from './IconBar.jsx';
 
 const AboutMe = () => {
 	return (
 		<>
-			<section id="about" className="py-12 px-6 bg-blue-gray-800 h-1/2 ">
+			<section id="about" className="py-12 px-6 bg-blue-gray-800 h-1/2">
 				<div className="py-12 container mx-auto flex flex-row">
-					<div className="container mx-auto px-4 flex justify-center py-12 bg-blue-gray-800">
+					<div className="container mx-auto px-4 flex flex-col justify-between py-12 bg-blue-gray-800">
 						<Card
 							color="transparent"
 							shadow={false}
@@ -22,6 +23,7 @@ const AboutMe = () => {
 								technologies and building things that help people.
 							</Typography>
 						</Card>
+						<IconBar />
 					</div>
 					<div className="container mx-auto w-1/2 hidden xl:flex">
 						<ImageCarousel />

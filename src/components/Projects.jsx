@@ -72,8 +72,7 @@ const Projects = () => {
 									YourSchools (WIP)
 								</h3>
 								<p className="text-blue-gray-800">
-									Preschool and Daycare finder built using MongoDB, React,
-									Express and Node.js.
+									Preschool and Daycare finder built using MongoDB, React, Express and Node.js.
 								</p>
 							</div>
 						</a>

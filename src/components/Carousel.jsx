@@ -1,25 +1,30 @@
 import { Carousel } from '@material-tailwind/react';
+import avatar from '../assets/img/avatar2.jpg';
+import family from '../assets/img/family.jpg';
+import helo from '../assets/img/helo.png';
 
 const ImageCarousel = () => {
 	return (
-		<Carousel className="rounded-xl">
+		<Carousel className="rounded-xl" autoplay loop >
 			<img
-				src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-				alt="image 1"
+				src={family}
+				alt="family picture"
 				className="h-full w-full object-cover"
 			/>
+
 			<img
-				src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-				alt="image 2"
-				className="h-full w-full object-cover"
+				src={avatar}
+				alt="air force picture"
+				className="h-full w-full object-cover h-fit"
 			/>
-			<img
-				src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-				alt="image 3"
-				className="h-full w-full object-cover"
+
+			<img 
+				src={helo} 
+				alt="helicopter" 
+				className="h-full w-full object-cover" 
 			/>
 		</Carousel>
 	);
-}
+};
 
 export default ImageCarousel;

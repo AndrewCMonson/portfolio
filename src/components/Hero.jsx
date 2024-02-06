@@ -2,23 +2,13 @@ import react from '../assets/img/react.png';
 import mongo from '../assets/img/mongo.png';
 import node from '../assets/img/nodejs.png';
 import typescript from '../assets/img/typescript.png';
-import portrait from '../assets/img/avatar.jpg';
 
 const Hero = () => {
 	return (
 		<>
 			<section className="bg-white md:h-1/2 py-12 px-6">
-				<div className="flex flex-row items-center justify-evenly container mx-auto mt-2">
-					<div className="w-1/2 flex justify-center items-center ">
-						<div className="p-3 flex flex-row justify-center">
-							<img
-								src={portrait}
-								alt="avatar"
-								className="rounded-lg shadow-lg object-cover object-center max-h-96"
-							/>
-						</div>
-					</div>
-					<div className="w-1/2 flex flex-col text-center container  md:items-center">
+				<div className="container mx-auto">
+					<div className="md:mt-28 flex flex-col text-center container  md:items-center">
 						<div className="text-blue-gray-900 text-2xl sm:text-3xl md:text-5xl lg:text-6xl">
 							I&apos;m Andrew
 						</div>
