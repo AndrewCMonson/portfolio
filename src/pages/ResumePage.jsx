@@ -7,7 +7,7 @@ const ResumePage = () => {
 	return (
 		<section className="container mx-auto flex flex-col items-center justify-center mt-8">
 			<Transition.Child
-				className="flex flex-col items-center"
+				className="flex flex-col items-center pb-8"
 				enter="transition-transform duration-2000"
 				enterFrom="transform -translate-y-96"
 				enterTo="transform translate-x-0"
@@ -18,9 +18,7 @@ const ResumePage = () => {
 				<Typography variant="h3" color="black">
 					How&apos;d I get here?
 				</Typography>
-				<Typography variant="h6" color="black" className="pb-8">
-					(it&apos;s been a ride)
-				</Typography>
+				<div className="h-1 w-20 bg-[#333333] mx-auto mt-2"></div>
 			</Transition.Child>
 
 			<div className="md:w-[40rem] mx-8 sm:mb-0">

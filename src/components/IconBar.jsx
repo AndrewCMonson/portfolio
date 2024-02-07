@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const IconBar = () => {
 	return (
-		<div className="flex gap-4 px-4 ">
+		<div className="flex gap-4 px-4 py-4 flex-row container mx-auto justify-center">
 			<a
 				href="https://www.linkedin.com/in/andrew-c-monson/"
 				target="_blank"
