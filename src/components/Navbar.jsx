@@ -26,8 +26,7 @@ const Nav = () => {
 				<Typography
 					as="li"
 					variant="small"
-					color="blue-gray-800"
-					className="p-1 font-normal hover:text-blue-gray-400"
+					className="p-1 font-normal text-blue-gray-800 hover:text-blue-gray-400"
 				>
 					<a href="/contact" className="flex items-center">
 						Contact
@@ -39,8 +38,7 @@ const Nav = () => {
 				<Typography
 					as="li"
 					variant="small"
-					color="blue-gray-800"
-					className="p-1 font-normal hover:text-blue-gray-400"
+					className="p-1 font-normal text-blue-gray-800 hover:text-blue-gray-400"
 				>
 					<a href="/projects" className="flex items-center">
 						Projects
@@ -52,8 +50,7 @@ const Nav = () => {
 				<Typography
 					as="li"
 					variant="small"
-					color="blue-gray-800"
-					className="p-1 font-normal hover:text-blue-gray-400"
+					className="p-1 font-normal text-blue-gray-800 hover:text-blue-gray-400"
 				>
 					<a href="/about" className="flex items-center">
 						About
@@ -65,8 +62,7 @@ const Nav = () => {
 				<Typography
 					as="li"
 					variant="small"
-					color="blue-gray-800"
-					className="p-1 font-normal hover:text-blue-gray-400"
+					className="p-1 font-normal text-blue-gray-800 hover:text-blue-gray-400"
 				>
 					<a href="/resume" className="flex items-center">
 						Resume

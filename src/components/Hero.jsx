@@ -7,10 +7,10 @@ const Hero = () => {
 	return (
 		<>
 				<div className="flex flex-col text-center container md:items-center py-2">
-					<div className="text-blue-gray-800 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+					<div className="text-oxford-blue text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
 						I&apos;m Andrew
 					</div>
-					<div className="text-blue-gray-900 text-xs sm:text-sm md:text-lg md:block">
+					<div className="text-oxford-blue text-xs sm:text-sm md:text-lg md:block">
 						I build full stack web apps
 					</div>
 					<div className="flex flex-row justify-center">

@@ -15,10 +15,10 @@ const ResumePage  = () => {
 				leaveFrom="transform translate-y-0"
 				leaveTo="transform -translate-y-48"
 			>
-				<Typography variant="h3" color="blue-gray-800">
+				<Typography variant="h3" color="black">
 					How&apos;d I get here?
 				</Typography>
-				<Typography variant="h6" color="blue-gray-800" className="pb-8">
+				<Typography variant="h6" color="black" className="pb-8">
 					(it&apos;s been a ride)
 				</Typography>
 			</Transition.Child>
@@ -32,6 +32,8 @@ const ResumePage  = () => {
 							title={job.title}
 							company={job.company}
 							description={job.description}
+                            image={job.image}
+                            date={job.date}
 							isLast={index + 1 === jobs.length ? true : false}
 						/>
 					))}

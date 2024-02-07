@@ -12,6 +12,10 @@ export default withMT({
 				2000: '2000ms',
 				5000: '5000ms',
 			},
+      colors: {
+        'oxford-blue': '#1B2A41',
+        'battleship-gray': '#838E83'
+      }
 		},
 	},
 	plugins: [],
