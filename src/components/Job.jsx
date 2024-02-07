@@ -8,14 +8,14 @@ import {
 } from '@material-tailwind/react';
 
 import { Transition } from '@headlessui/react';
+import { useCallback } from 'react';
 
 const Job = ({ index, title, company, description, isLast, image, date }) => {
-
-    const changeEveryOther = index => {
+	const changeEveryOther = useCallback(index => {
 		return index % 2 === 0
 			? 'transform translate-x-96'
 			: 'transform -translate-x-96';
-	};
+	}, []);
 
 	return (
 		<>
@@ -44,7 +44,9 @@ const Job = ({ index, title, company, description, isLast, image, date }) => {
 								{title}
 							</div>
 
-							<div className="text-sm text-battleship-gray italic">{company}</div>
+							<div className="text-sm text-battleship-gray italic">
+								{company}
+							</div>
 							<div className="text-sm text-battleship-gray">{date}</div>
 						</div>
 					</TimelineHeader>

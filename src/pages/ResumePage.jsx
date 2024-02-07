@@ -3,7 +3,7 @@ import { Transition } from '@headlessui/react';
 import Job from '../components/Job.jsx';
 import jobs from '../data/jobs.js';
 
-const ResumePage  = () => {
+const ResumePage = () => {
 	return (
 		<section className="container mx-auto flex flex-col items-center justify-center mt-8">
 			<Transition.Child
@@ -32,8 +32,8 @@ const ResumePage  = () => {
 							title={job.title}
 							company={job.company}
 							description={job.description}
-                            image={job.image}
-                            date={job.date}
+							image={job.image}
+							date={job.date}
 							isLast={index + 1 === jobs.length ? true : false}
 						/>
 					))}

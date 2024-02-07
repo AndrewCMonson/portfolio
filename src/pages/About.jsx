@@ -1,6 +1,5 @@
 import AboutMe from '../components/AboutMe.jsx';
 
-
 const About = () => {
 	return (
 		<>

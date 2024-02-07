@@ -2,9 +2,8 @@ import projects from '../data/projects';
 import Project from '../components/Project';
 import { Transition } from '@headlessui/react';
 
-
 const ProjectPage = () => {
-  return (
+	return (
 		<Transition
 			appear={true}
 			show={true}
@@ -50,5 +49,5 @@ const ProjectPage = () => {
 			</section>
 		</Transition>
 	);
-}
-export default ProjectPage
+};
+export default ProjectPage;
