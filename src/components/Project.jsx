@@ -1,6 +1,4 @@
-
-
-const Project = ({ title, description, image, link}) => {
+const Project = ({ title, description, image, link }) => {
 	return (
 		<>
 			<div className="md:hover:-translate-y-1 md:hover:-translate-x-1 bg-white shadow-lg hover:shadow-xl rounded-lg overflow-hidden">

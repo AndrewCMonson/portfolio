@@ -2,7 +2,7 @@ import Resume from "../components/Resume"
 
 const ResumePage = () => {
   return (
-    <div>
+    <div className="h-full">
         <Resume />
     </div>
   )
