@@ -1,4 +1,4 @@
-import { Timeline, Typography } from '@material-tailwind/react';
+import { Timeline } from '@material-tailwind/react';
 import { Transition } from '@headlessui/react';
 import Job from '../components/Job.jsx';
 import jobs from '../data/jobs.js';
@@ -15,9 +15,9 @@ const ResumePage = () => {
 				leaveFrom="transform translate-y-0"
 				leaveTo="transform -translate-y-48"
 			>
-				<Typography variant="h3" color="black">
+				<div className="text-4xl font-bold text-oxford-blue">
 					How&apos;d I get here?
-				</Typography>
+				</div>
 				<div className="h-1 w-20 bg-[#333333] mx-auto mt-2"></div>
 			</Transition.Child>
 

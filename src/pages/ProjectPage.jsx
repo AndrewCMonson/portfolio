@@ -17,9 +17,10 @@ const ProjectPage = () => {
 		>
 			<section id="projects" className="h-full py-12 px-6 container mx-auto">
 				<div className="text-center mb-12">
-					<h2 className="text-4xl font-bold text-blue-gray-800 mb-4">
+					<h2 className="text-4xl font-bold text-oxford-blue">
 						Projects
 					</h2>
+					<div className="h-1 w-20 bg-[#333333] mx-auto my-2"></div>
 					<p className="text-blue-gray-800">
 						Here are some of the projects I&apos;ve worked on recently.
 					</p>
