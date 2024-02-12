@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Job from '../components/Job.jsx';
 import TechnologyBar from '../components/TechnologyBar.jsx';
 import jobs from '../data/jobs.js';
-import Resume from '../../public/Andrew_Monson.pdf';
+import Resume from '../assets/Andrew_Monson.pdf';
 
 const ResumePage = () => {
 	return (
