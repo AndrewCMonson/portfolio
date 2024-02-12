@@ -50,58 +50,68 @@ const ContactForm = () => {
 
 	const { name, email, message } = formData;
 
+
 	const handleChange = e => {
 		switch (e.target.name) {
 			case 'name':
-				e.target.value === ''
-					? setFormData({
-							...formData,
-							name: {
-								value: e.target.value,
-								valid: false,
-							},
-					  })
-					: setFormData({
-							...formData,
-							name: {
-								value: e.target.value,
-								valid: true,
-							},
-					  });
+				if (e.target.value === '') {
+					setFormData({
+						...formData,
+						name: {
+							value: e.target.value,
+							valid: false,
+						},
+					});
+				} else {
+					setError({ ...error, name: '' });
+					setFormData({
+						...formData,
+						name: {
+							value: e.target.value,
+							valid: true,
+						},
+					});
+				}
 				break;
 			case 'email':
-				!isEmail(e.target.value)
-					? setFormData({
-							...formData,
-							email: {
-								value: e.target.value,
-								valid: false,
-							},
-					  })
-					: setFormData({
-							...formData,
-							email: {
-								value: e.target.value,
-								valid: true,
-							},
-					  });
+				if(!isEmail(e.target.value)){
+					setFormData({
+						...formData,
+						email: {
+							value: e.target.value,
+							valid: false,
+						},
+					});
+				} else {
+					setError({ ...error, email: '' });
+					setFormData({
+						...formData,
+						email: {
+							value: e.target.value,
+							valid: true,
+						},
+					});
+				}
 				break;
 			case 'message':
-				e.target.value === ''
-					? setFormData({
-							...formData,
-							message: {
-								value: e.target.value,
-								valid: false,
-							},
-					  })
-					: setFormData({
-							...formData,
-							message: {
-								value: e.target.value,
-								valid: true,
-							},
-					  });
+				if(e.target.value === ''){
+					setFormData({
+						...formData,
+						message: {
+							value: e.target.value,
+							valid: false,
+						},
+					});
+				} else {
+					setError({ ...error, message: '' });
+					setFormData({
+						...formData,
+						message: {
+							value: e.target.value,
+							valid: true,
+						},
+					});
+				}
 				break;
 			default:
 				break;
@@ -111,17 +121,17 @@ const ContactForm = () => {
 	const handleMouseOut = e => {
 		switch (e.target.name) {
 			case 'name':
-				e.target.value === ''
+				!name.valid
 					? setError({ ...error, name: 'Name is required' })
 					: setError({ ...error, name: '' });
 				break;
 			case 'email':
-				email.valid === false
+				!email.valid
 					? setError({ ...error, email: 'A valid email is required' })
 					: setError({ ...error, email: '' });
 				break;
 			case 'message':
-				e.target.value === ''
+				!message.valid
 					? setError({ ...error, message: 'Message is required' })
 					: setError({ ...error, message: '' });
 				break;
@@ -214,12 +224,7 @@ const ContactForm = () => {
 								</div>
 							</div>
 						</div>
-						{sent && (
-							<Typography color="green" className="mt-2">
-								Email sent!
-							</Typography>
-						)}
-						{name.valid && email.valid && message.valid ? (
+						{name.valid && email.valid && message.valid && !sent ? (
 							<Button className="mt-6 bg-blue-gray-700" fullWidth type="submit">
 								{sent ? 'Email Sent!' : 'Send Message'}
 							</Button>
@@ -230,7 +235,7 @@ const ContactForm = () => {
 								type="submit"
 								disabled
 							>
-								Please complete the form
+								{sent ? 'Email Sent!' : 'Please complete the form'}
 							</Button>
 						)}
 					</form>
