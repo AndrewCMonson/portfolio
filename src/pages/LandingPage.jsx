@@ -43,7 +43,7 @@ const LandingPage = () => {
 						<div className="">
 							<a
 								href="/projects"
-								className="text-blue-gray-900 text-xs sm:text-sm md:text-lg md:block"
+								className="text-oxford-blue text-xs sm:text-sm md:text-lg md:block"
 							>
 								<Button
 									href="/projects"
@@ -51,6 +51,7 @@ const LandingPage = () => {
 									ripple={true}
 									size="sm"
 									onClick={handleClick}
+									
 								>
 									See my Portfolio
 								</Button>
