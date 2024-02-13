@@ -6,7 +6,7 @@ const AboutMeCard = () => {
 	return (
 		<>
 			<Transition.Child
-				className="min-w-80 container mx-auto flex flex-col justify-center sm:w-1/2 2xl:w-1/3 mt-8 px-8"
+				className=" container mx-auto flex flex-col justify-center min-w-80 w-1/2 max-w-xl  mt-8 px-8"
 				enter="transition-all duration-2000"
 				enterFrom="transform translate-x-96 opacity-0"
 				enterTo="transform translate-x-0 opactiy-100"

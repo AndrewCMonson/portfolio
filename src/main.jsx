@@ -5,7 +5,7 @@ import {
 	Route,
 	RouterProvider
 } from 'react-router-dom'
-import About from './pages/About';
+import AboutPage from './pages/AboutPage.jsx';
 import ProjectPage from './pages/ProjectPage.jsx';
 import ResumePage from './pages/ResumePage.jsx';
 import ContactPage from './pages/ContactPage';
@@ -19,7 +19,7 @@ const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<App />} >
 			<Route index={true} path='/' element={<LandingPage />} />
-			<Route path='/about' element={<About />} />
+			<Route path='/about' element={<AboutPage />} />
 			<Route path='/projects' element={<ProjectPage />} />
 			<Route path='/resume' element={<ResumePage />} />
 			<Route path='/contact' element={<ContactPage />} />
