@@ -20,9 +20,9 @@ const Job = ({ index, title, company, description, isLast, image, date }) => {
 	return (
 		<>
 			<Transition.Child
-				enter="transition-transform duration-2000"
-				enterFrom={`transform ${changeEveryOther(index)}`}
-				enterTo="transform translate-x-0"
+				enter="transition-all duration-2000"
+				enterFrom={`transform ${changeEveryOther(index)} opacity-0`}
+				enterTo="transform translate-x-0 opacity-100"
 				leave="transition-transform duration-150"
 				leaveFrom="transform translate-y-0"
 				leaveTo="transform -translate-y-48"
@@ -36,21 +36,21 @@ const Job = ({ index, title, company, description, isLast, image, date }) => {
 								src={image}
 								alt="user 2"
 								withBorder
-								className="bg-white"
+								className="bg-white -translate-y-.5 transform"
 							/>
 						</TimelineIcon>
 						<div className="flex flex-col">
-							<div className="text-sm md:text-base lg:text-lg xl:text-xl font-bold text-black">
+							<div className="text-sm md:text-base lg:text-lg xl:text-xl font-bold text-snow">
 								{title}
 							</div>
 
-							<div className="text-sm text-battleship-gray italic">
+							<div className="text-sm text-black italic">
 								{company}
 							</div>
-							<div className="text-sm text-battleship-gray">{date}</div>
+							<div className="text-sm text-black">{date}</div>
 						</div>
 					</TimelineHeader>
-					<TimelineBody className="pb-8 text-black">
+					<TimelineBody className="pb-8 text-snow">
 						<ul className="list-disc list-inside">
 							{description.map((item, index) => (
 								<li key={index}>{item}</li>

@@ -10,6 +10,7 @@ import ProjectPage from './pages/ProjectPage.jsx';
 import ResumePage from './pages/ResumePage.jsx';
 import ContactPage from './pages/ContactPage';
 import LandingPage from './pages/LandingPage.jsx';
+import WildcardPage from './pages/WildcardPage.jsx';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
 			<Route path='/projects' element={<ProjectPage />} />
 			<Route path='/resume' element={<ResumePage />} />
 			<Route path='/contact' element={<ContactPage />} />
+			<Route path='*' element={<WildcardPage />} />
 		</Route>
 	)
 );

@@ -4,10 +4,10 @@ import { Transition } from '@headlessui/react';
 
 const ProjectPage = () => {
 	return (
-		<Transition
+		<Transition.Child
 			appear={true}
 			show={true}
-			enter="transition-opacity duration-2000"
+			enter="transition-all duration-2000"
 			enterFrom="opacity-0"
 			enterTo="opacity-100"
 			leave="transition-opacity duration-150"
@@ -17,14 +17,12 @@ const ProjectPage = () => {
 		>
 			<section id="projects" className="h-full py-12 px-6 container mx-auto">
 				<div className="text-center mb-12">
-					<h2 className="text-4xl font-bold text-oxford-blue">
-						Projects
-					</h2>
-					<div className="h-1 w-20 bg-[#333333] mx-auto my-2"></div>
-					<p className="text-blue-gray-800">
+					<h2 className="text-4xl font-bold text-snow">Projects</h2>
+					<div className="h-1 w-20 bg-[#215675] mx-auto my-2"></div>
+					<p className="text-snow">
 						Here are some of the projects I&apos;ve worked on recently.
 					</p>
-					<p className="text-blue-gray-800">
+					<p className="text-snow">
 						You can check out my Github{' '}
 						<a
 							href="https://www.github.com/AndrewCMonson"
@@ -48,7 +46,7 @@ const ProjectPage = () => {
 					))}
 				</div>
 			</section>
-		</Transition>
+		</Transition.Child>
 	);
 };
 export default ProjectPage;

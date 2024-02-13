@@ -9,10 +9,10 @@ const Project = ({ title, description, image, link }) => {
 						className="w-full h-56 object-cover object-center"
 					/>
 					<div className="p-4">
-						<h3 className="text-xl font-bold text-blue-gray-900 mb-2">
+						<h3 className="text-xl font-bold text-oxford-blue mb-2">
 							{title}
 						</h3>
-						<p className="text-blue-gray-800">{description}</p>
+						<p className="text-oxford-blue">{description}</p>
 					</div>
 				</a>
 			</div>

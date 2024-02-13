@@ -18,11 +18,11 @@ const ResumePage = () => {
 				leaveFrom="transform translate-y-0"
 				leaveTo="transform -translate-y-48"
 			>
-				<div className="text-4xl font-bold text-oxford-blue">
+				<div className="text-4xl font-bold text-snow">
 					How&apos;d I get here?
 				</div>
-				<div className="h-1 w-20 bg-[#333333] mx-auto mt-2"></div>
-				<Link to={Resume} target="_blank" download>
+				<div className="h-1 w-20 bg-oxford-blue mx-auto mt-2"></div>
+				<Link to={Resume} target="_blank" download className='text-snow text-md xl:text-xl'>
 					Download a copy
 				</Link>
 				<TechnologyBar />

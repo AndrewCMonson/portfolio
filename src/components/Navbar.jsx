@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 import {
 	Navbar,
@@ -22,51 +22,90 @@ const Nav = () => {
 
 	const navList = (
 		<ul className=" mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-			{location.pathname === '/contact' ? null : (
+			{location.pathname === '/about' ? (
 				<Typography
 					as="li"
 					variant="small"
-					className="p-1 font-normal text-blue-gray-800 hover:text-blue-gray-400"
+					className="p-1 font-normal text-white bg-oxford-blue rounded-md"
 				>
-					<a href="/contact" className="flex items-center">
-						Contact
-					</a>
+					<span className="flex items-center">About</span>
 				</Typography>
-			)}
-
-			{location.pathname === '/projects' ? null : (
+			) : (
 				<Typography
 					as="li"
 					variant="small"
-					className="p-1 font-normal text-blue-gray-800 hover:text-blue-gray-400"
+					className={`p-1 font-normal text-snow ${
+						openNav ? 'hover:bg-transparent' : 'hover:bg-oxford-blue'
+					} hover:rounded-md`}
 				>
-					<a href="/projects" className="flex items-center">
-						Projects
-					</a>
-				</Typography>
-			)}
-
-			{location.pathname === '/about' ? null : (
-				<Typography
-					as="li"
-					variant="small"
-					className="p-1 font-normal text-blue-gray-800 hover:text-blue-gray-400"
-				>
-					<a href="/about" className="flex items-center">
+					<Link to="/about" className="flex items-center">
 						About
-					</a>
+					</Link>
 				</Typography>
 			)}
 
-			{location.pathname === '/resume' ? null : (
+			{location.pathname === '/projects' ? (
 				<Typography
 					as="li"
 					variant="small"
-					className="p-1 font-normal text-blue-gray-800 hover:text-blue-gray-400"
+					className="p-1 font-normal text-snow bg-oxford-blue rounded-md"
 				>
-					<a href="/resume" className="flex items-center">
+					<span className="flex items-center">Projects</span>
+				</Typography>
+			) : (
+				<Typography
+					as="li"
+					variant="small"
+					className={`p-1 font-normal text-snow ${
+						openNav ? 'hover:bg-transparent' : 'hover:bg-oxford-blue'
+					} hover:rounded-md`}
+				>
+					<Link to="/projects" className="flex items-center">
+						Projects
+					</Link>
+				</Typography>
+			)}
+
+			{location.pathname === '/resume' ? (
+				<Typography
+					as="li"
+					variant="small"
+					className="p-1 font-normal text-white bg-oxford-blue rounded-md"
+				>
+					<span className="flex items-center">Resume</span>
+				</Typography>
+			) : (
+				<Typography
+					as="li"
+					variant="small"
+					className={`p-1 font-normal text-snow ${
+						openNav ? 'hover:bg-transparent' : 'hover:bg-oxford-blue'
+					} hover:rounded-md`}
+				>
+					<Link to="/resume" className="flex items-center">
 						Resume
-					</a>
+					</Link>
+				</Typography>
+			)}
+			{location.pathname === '/contact' ? (
+				<Typography
+					as="li"
+					variant="small"
+					className="p-1 font-normal text-snow bg-oxford-blue rounded-md"
+				>
+					<span className="flex items-center">Contact</span>
+				</Typography>
+			) : (
+				<Typography
+					as="li"
+					variant="small"
+					className={`p-1 font-normal text-snow ${
+						openNav ? 'hover:bg-transparent' : 'hover:bg-oxford-blue'
+					} hover:rounded-md`}
+				>
+					<Link to="/contact" className="flex items-center">
+						Contact
+					</Link>
 				</Typography>
 			)}
 		</ul>
@@ -74,18 +113,18 @@ const Nav = () => {
 
 	return (
 		<Navbar
-			className="top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 text-blue-gray-900"
+			className="top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4"
 			color="transparent"
 			shadow={true}
 		>
-			<div className="flex items-center justify-between text-blue-gray-900">
+			<div className="flex items-center justify-between">
 				<div>
 					{location.pathname !== '/' ? (
-						<Typography variant="h5" color="blue-gray">
+						<h5 className="text-snow text-xl">
 							<a href="/">
-								<span className="font-bold">andrew</span>
+								<span >andrew</span>
 							</a>
-						</Typography>
+						</h5>
 					) : null}
 				</div>
 				<div className="flex items-center gap-4">

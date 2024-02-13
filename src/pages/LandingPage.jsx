@@ -13,7 +13,7 @@ const LandingPage = () => {
 		event.preventDefault();
 
 		setTimeout(() => {
-			navigate('/projects');
+			navigate('/about');
 		}, 2000);
 
 		setClicked(true);
@@ -41,21 +41,15 @@ const LandingPage = () => {
 					>
 						<Hero />
 						<div className="">
-							<a
-								href="/projects"
-								className="text-oxford-blue text-xs sm:text-sm md:text-lg md:block"
-							>
 								<Button
-									href="/projects"
 									variant="outlined"
 									ripple={true}
 									size="sm"
 									onClick={handleClick}
-									
+									className='text-snow border-snow hover:bg-snow hover:text-oxford-blue'
 								>
 									See my Portfolio
 								</Button>
-							</a>
 						</div>
 					</div>
 				</Transition>

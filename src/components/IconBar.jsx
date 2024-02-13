@@ -10,7 +10,7 @@ const IconBar = () => {
 				target="_blank"
 				rel="noreferrer"
 			>
-				<IconButton className="rounded bg-[#333333] hover:shadow-[#333333]/20 focus:shadow-[#ea4c89]/20 active:shadow-[#ea4c89]/10">
+				<IconButton className="rounded bg-[#215675] hover:shadow-[#215675]/20 focus:shadow-[#ea4c89]/20 active:shadow-[#ea4c89]/10">
 					<FontAwesomeIcon icon={faLinkedinIn} size="2xl" />
 				</IconButton>
 			</a>
@@ -19,7 +19,7 @@ const IconBar = () => {
 				target="_blank"
 				rel="noreferrer"
 			>
-				<IconButton className="rounded bg-[#333333] hover:shadow-[#333333]/20 focus:shadow-[#333333]/20 active:shadow-[#333333]/10">
+				<IconButton className="rounded bg-[#215675] hover:shadow-[#215675]/20 focus:shadow-[#333333]/20 active:shadow-[#ea4c89]/10">
 					<FontAwesomeIcon icon={faGithub} size="2xl" />
 				</IconButton>
 			</a>

@@ -4,12 +4,12 @@ import withMT from '@material-tailwind/react/utils/withMT';
 export default withMT({
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
-		screens : {
-			'sm': '640px',
-			'md': '768px',
+		screens: {
+			sm: '640px',
+			md: '768px',
 			'md-lg': '800px',
-			'lg': '1024px',
-			'xl': '1280px',
+			lg: '1024px',
+			xl: '1280px',
 			'2xl': '1536px',
 		},
 		extend: {
@@ -20,10 +20,11 @@ export default withMT({
 				2000: '2000ms',
 				5000: '5000ms',
 			},
-      colors: {
-        'oxford-blue': '#1B2A41',
-        'battleship-gray': '#838E83'
-      }
+			colors: {
+				'oxford-blue': '#215675',
+				'battleship-gray': '#838E83',
+				'snow': '#FFFBFC',
+			},
 		},
 	},
 	plugins: [],
