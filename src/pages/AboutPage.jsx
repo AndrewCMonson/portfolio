@@ -16,7 +16,7 @@ const About = () => {
 					leaveTo="transform -translate-y-48"
 				>
 					<h1 className="text-4xl font-bold text-snow">About Me</h1>
-					<div className="h-1 w-20 bg-[#000000] mx-auto mt-2"></div>
+					<div className="h-1 w-20 bg-[#215675] mx-auto mt-2"></div>
 				</Transition.Child>
 
 				<div className="flex flex-col">
