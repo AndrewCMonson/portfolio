@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-
+import navData from '../data/navData';
 import {
 	Navbar,
 	Typography,
@@ -10,8 +10,9 @@ import {
 
 const Nav = () => {
 	const [openNav, setOpenNav] = useState(false);
-
+	const navBarRef = useRef(null);
 	const location = useLocation();
+	const { pathname } = location;
 
 	useEffect(() => {
 		window.addEventListener(
@@ -20,102 +21,64 @@ const Nav = () => {
 		);
 	}, []);
 
+	useEffect(() => {
+		document.addEventListener('mousedown', handleClickOutside);
+		return () => document.removeEventListener('mousedown', handleClickOutside);
+	}, []);
+
+	const handleClickOutside = (event) => {
+		if (
+			navBarRef.current &&
+			!navBarRef.current.contains(event.target) &&
+			window.innerWidth < 960
+		) {
+			setOpenNav(false);
+		}
+	};
+
+	useEffect(() => {
+		setOpenNav(false);
+	}
+	, [pathname]);
+
 	const navList = (
 		<ul className=" mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-			{location.pathname === '/about' ? (
-				<Typography
-					as="li"
-					variant="small"
-					className="p-1 font-normal text-white bg-oxford-blue rounded-md"
-				>
-					<span className="flex items-center">About</span>
-				</Typography>
-			) : (
-				<Typography
-					as="li"
-					variant="small"
-					className={`p-1 font-normal text-snow ${
-						openNav ? 'hover:bg-transparent' : 'hover:bg-oxford-blue'
-					} hover:rounded-md`}
-				>
-					<Link to="/about" className="flex items-center">
-						About
-					</Link>
-				</Typography>
-			)}
-
-			{location.pathname === '/projects' ? (
-				<Typography
-					as="li"
-					variant="small"
-					className="p-1 font-normal text-snow bg-oxford-blue rounded-md"
-				>
-					<span className="flex items-center">Projects</span>
-				</Typography>
-			) : (
-				<Typography
-					as="li"
-					variant="small"
-					className={`p-1 font-normal text-snow ${
-						openNav ? 'hover:bg-transparent' : 'hover:bg-oxford-blue'
-					} hover:rounded-md`}
-				>
-					<Link to="/projects" className="flex items-center">
-						Projects
-					</Link>
-				</Typography>
-			)}
-
-			{location.pathname === '/resume' ? (
-				<Typography
-					as="li"
-					variant="small"
-					className="p-1 font-normal text-white bg-oxford-blue rounded-md"
-				>
-					<span className="flex items-center">Resume</span>
-				</Typography>
-			) : (
-				<Typography
-					as="li"
-					variant="small"
-					className={`p-1 font-normal text-snow ${
-						openNav ? 'hover:bg-transparent' : 'hover:bg-oxford-blue'
-					} hover:rounded-md`}
-				>
-					<Link to="/resume" className="flex items-center">
-						Resume
-					</Link>
-				</Typography>
-			)}
-			{location.pathname === '/contact' ? (
-				<Typography
-					as="li"
-					variant="small"
-					className="p-1 font-normal text-snow bg-oxford-blue rounded-md"
-				>
-					<span className="flex items-center">Contact</span>
-				</Typography>
-			) : (
-				<Typography
-					as="li"
-					variant="small"
-					className={`p-1 font-normal text-snow ${
-						openNav ? 'hover:bg-transparent' : 'hover:bg-oxford-blue'
-					} hover:rounded-md`}
-				>
-					<Link to="/contact" className="flex items-center">
-						Contact
-					</Link>
-				</Typography>
-			)}
+			{navData.map((item, index) => {
+				return (
+					<li key={index}>
+						{pathname === item.path ? (
+							<Typography
+								as="li"
+								variant="small"
+								className="p-1 font-normal text-white bg-oxford-blue rounded-md"
+							>
+								<span className="flex items-center">{item.title}</span>
+							</Typography>
+						) : (
+							<Typography
+								as="li"
+								variant="small"
+								className={`p-1 font-normal text-snow ${
+									openNav ? 'hover:bg-transparent' : 'hover:bg-oxford-blue'
+								} hover:rounded-md`}
+							>
+								<Link to={item.path} className="flex items-center">
+									{item.title}
+								</Link>
+							</Typography>
+						)}
+					</li>
+				);
+			})}
 		</ul>
 	);
-
+	
 	return (
 		<Navbar
 			className="top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4"
 			color="transparent"
 			shadow={true}
+			ref={navBarRef}
 		>
 			<div className="flex items-center justify-between">
 				<div>
