@@ -7,6 +7,15 @@
 ## Description
 This is a personal website/portfolio built using React, Tailwind CSS and HeadlessUI.
 
+## Live Site
+
+You can view the live site [here](https://www.andrewmonson.net)
+
+## Screenshots
+
+![Screenshot](./src/assets/img/screenshot.png)
+![Screenshot](./src/assets/img/screenshot2.png)
+
 ## Table of Contents
 * [License](#license)
 * [Contact](#contact)
