@@ -18,9 +18,9 @@ const projects = [
 			'eCommerce application built with MongoDB, React, Redux, Express and Node.js.',
 	},
 	{
-		src: 'https://www.github.com/AndrewCMonson/no-name-react',
+		src: 'https://www.your-schools.onrender.com',
 		img: yourSchools,
-		name: 'YourSchools (under construction)',
+		name: 'YourSchools',
 		description:
 			'Preschool and Daycare finder built using MongoDB, React, Express and Node.js.',
 	},
