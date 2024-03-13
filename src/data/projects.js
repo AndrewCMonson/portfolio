@@ -18,7 +18,7 @@ const projects = [
 			'eCommerce application built with MongoDB, React, Redux, Express and Node.js.',
 	},
 	{
-		src: 'https://www.your-schools.onrender.com',
+		src: 'https://your-schools.onrender.com',
 		img: yourSchools,
 		name: 'YourSchools',
 		description:
